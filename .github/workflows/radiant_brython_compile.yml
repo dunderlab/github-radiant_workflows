@@ -1,4 +1,4 @@
-name: Radiant Compilation Process
+name: Radiant Compilation Process for Brython Project
 
 on:
   workflow_dispatch:  # Allows manual trigger of the workflow
@@ -44,5 +44,5 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: generated-apks
-        path: ./*.apk
+        path: brython_app/*.apk
       # Uploads all generated .apk files as artifacts for download
