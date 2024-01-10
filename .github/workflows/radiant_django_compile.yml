@@ -36,6 +36,7 @@ jobs:
             pip download  --no-deps radiant-framework
             unzip radiant_framework*.whl "radiant/*" -d .
         fi
+        rm *.whl
 
         # Create a blacklist.txt file and write "*.pyc" into it
         # This is typically used to exclude Python bytecode files
