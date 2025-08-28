@@ -27,7 +27,7 @@ jobs:
 
         # Dowload the main sources to prevent compilation
         if grep -q "radiant.compiler" main.py; then
-            pip download --no-deps django
+            pip download --no-deps django==5.0.1
             unzip Django*.whl "django/*" -d .
             pip download  --no-deps radiant-compiler
             unzip radiant_compiler*.whl "radiant/*" -d .
